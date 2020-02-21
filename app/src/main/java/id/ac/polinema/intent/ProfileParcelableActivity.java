@@ -1,6 +1,7 @@
 package id.ac.polinema.intent;
 
 import android.os.Bundle;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -27,7 +28,9 @@ public class ProfileParcelableActivity extends AppCompatActivity {
         if (extras != null) {
 
             // TODO: display value here
-
+            username.setText(value.getUsername());
+            name.setText(value.getName());
+            age.setText(String.valueOf(value.getAge()));
         }
     }
 }
